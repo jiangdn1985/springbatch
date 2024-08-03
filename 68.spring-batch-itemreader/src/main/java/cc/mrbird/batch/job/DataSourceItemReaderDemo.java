@@ -17,7 +17,7 @@ import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+/** 从数据库读取数据
  * @author MrBird
  */
 @Component
@@ -51,6 +51,7 @@ public class DataSourceItemReaderDemo {
         reader.setDataSource(dataSource); // 设置数据源
         reader.setFetchSize(5); // 每次取多少条记录
         reader.setPageSize(5); // 设置每页数据量
+
 
         // 指定sql查询语句 select id,field1,field2,field3 from TEST
         MySqlPagingQueryProvider provider = new MySqlPagingQueryProvider();

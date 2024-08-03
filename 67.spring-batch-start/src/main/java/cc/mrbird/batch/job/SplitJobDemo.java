@@ -14,6 +14,8 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author MrBird
+ *
+ *  并行任务
  */
 @Component
 public class SplitJobDemo {
